@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube clone</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #181818; */
+  /* color: #fff; */
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  background-color: #202020;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-info h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.video-info p {
+  font-size: 14px;
+  margin: 0 0 5px;
+  color: #aaa;
+}
+
+.video-info span {
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 5px;
+}
+
+.search-bar {
+  background-color: #212121;
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #212121;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background-color:white;
+    
+}
+
+header .search-btn {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">YouTube</div>
+        <input type="text" class="search-bar" placeholder="Search">
+        <button class="search-btn">🔍</button>
+    </header>
+    <main>
+  <div style=" height: 100%;
+  width: 100%;">
+     
+
+  <div class="video-grid">
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/mt-5ZbKqiDc/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYSSAsKH8wDw==&rs=AOn4CLAjczTqs9qiOIcGqPPWudVIGGa2yQ" alt="Thumbnail 1">
+      <div class="">
+        <h3>Yeh Tune Kya Kia by - Javed Bashir</h3>
+        <p>Naresh Kamath, Javed Ali, Rahat Fateh Ali Khan, and more</p>
+        
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/69-yupf0pAY/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYMiBmKHIwDw==&rs=AOn4CLCz6gvrHc4_2hwe5Rrk-Kx81AnTjQ" alt="Thumbnail 2">
+      <div class="video-info">
+        <h3>Mix - Dhanda Nyoliwala - Knife Brows (Official Music Video)</h3>
+        <p>Dhanda Nyoliwala, Karan Aujla, and more</p>
+        <span>Updated today</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/YktDxvTwp4A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCgm_ZvflbhfSn01eo1WWkLf8Dr1w" alt="Thumbnail 3">
+      <div class="video-info">
+        <h3>Dhanda Nyoliwala - Russian Bandana (Music Video) | Deepesh Goyal | VYRL Haryanvi</h3>
+        <p>MSK Series</p>
+        <span>398K views  6 days ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/8iGXu_e9z0s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBxyBJ6NrLyDeGWWmtlmXcm6YhHhQ" alt="Thumbnail 4">
+      <div class="video-info">
+        <h3>WAVY (OFFICIAL VIDEO) KARAN AUJLA | LATEST PUNJABI SONGS 2024</h3>
+        <p>KARAN AUJLA</p>
+        <span>28M 2 Weeks Ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/XhwRbwUHrCM/maxresdefault.jpg" alt="Thumbnail 5">
+      <div class="video-info">
+        <h3>Hukam (Full Video) Karan Aujla I Latest Punjabi Songs 2021 I Rehaan Records</h3>
+        <p>Rehaan Records</p>
+        <span>7M views • 3 year ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="https://i.ytimg.com/vi/fyQsRpby8MI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRfMdop0fg0Bd7OM2J2jwSXm_ZsA" alt="Thumbnail 6">
+      <div class="video-info">
+        <h3>JATT MEHKMA SONG (Full Video): YO YO HONEY SINGH | GLORY | BHUSHAN KUMAR</h3>
+        <p>T - Series</p>
+        <span> 19M views • 3 weeks ago</span>
+      </div>
+    </div>
+      <div class="video-card">
+      <img src="https://i.ytimg.com/vi/6wkwmDzZ3n4/maxresdefault.jpg">
+      <div class="video-info">
+        <h3>Try Me (Official Video) Karan Aujla | Ikky | Making Memories | Latest Punjabi Songs 2023</h3>
+        <p>Karan Aujla</p>
+        <span> 32M views • 1 year ago</span>
+      </div>
+    </div>
+     <div class="video-card">
+      <img src="data:image/jpeg;base64,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">
+      <div class="video-info">
+        <h3>THEY KNOW(Full Video) Karan Aujla I Rupan Bal | Proof I Latest Punjabi Songs 2022
+</h3>
+        <p>Karan Aujla</p>
+        <span> 21M views • 2 year ago</span>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
